@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analog Clock</title>
+    <link rel="stylesheet" href="analog.css">
+</head>
+
+<body>
+    <div class="clock">
+        <div class="point "></div>
+        <div class=" hour one">1</div>
+        <div class=" hour two">2</div>
+
+        <div class=" hour three">3</div>
+        <div class="hour four">4</div>
+        <div class=" hour five">5</div>
+        <div class="hour six">6</div>
+        <div class="hour seven">7</div>
+        <div class="hour eight">8</div>
+        <div class="hour nine">9</div>
+        <div class="hour ten">10</div>
+        <div class="hour eleven">11</div>
+        <div class="hour twelve">12</div>
+        <div class="brand">GUJJAR</div>
+
+
+        <div id="h1" class="minutehandwraper">
+            <div class="minutehand">
+                <div class="hand"> </div>
+                <div class="arrow">v</div>
+            </div>
+        </div>
+
+        <div id="m1" class="hourhandwraper  ">
+            <div class=hourhand ">
+                <div class="hand"> </div>
+                <div class="arrow">v</div>
+            </div>
+        </div>
+
+ <div id="s1" class="secondhandwraper  ">
+            <div class=secondhand ">
+                <div class="hand"> </div>
+            
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function updateClock() {
+          var now = new Date();
+          var hours = now.getHours();
+          var minutes = now.getMinutes();
+          var seconds = now.getSeconds();
+    
+          var hourDegrees = (hours % 12) * 30 + (minutes / 2);
+          var minuteDegrees = minutes * 6;
+          var secondDegrees = seconds * 6;
+    
+          document.getElementById('h1').style.transform = 'rotate(' + hourDegrees + 'deg)';
+          document.getElementById('m1').style.transform = 'rotate(' + minuteDegrees + 'deg)';
+          document.getElementById('s1').style.transform = 'rotate(' + secondDegrees + 'deg)';
+        }
+    
+        // Call updateClock function every second
+        setInterval(updateClock, 1000);
+    
+        // Initial call to display the clock immediately
+        updateClock();
+      </script>
+
+</body>
+
+</html>

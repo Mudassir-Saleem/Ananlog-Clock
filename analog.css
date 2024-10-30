@@ -1,0 +1,226 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.clock
+{
+    width: 500px ;
+    height: 500px ;
+    border: 22px solid blueviolet;
+    border-radius: 50%;
+    margin: 0% auto;
+    position: relative;
+
+}
+.point
+{
+    width: 20px;
+    height: 20px;
+    background-color: blueviolet;
+    border-radius: 50%;
+    position: absolute;
+    top: 240px;
+    left: 240px;
+}
+
+.hour
+{
+    font-size: 25px;
+    font-weight: bold;
+    color: lightseagreen;
+    position: absolute;
+}
+.one
+{
+    top: 40px ;
+    right: 130px;
+
+}
+.two
+{
+    top: 125px ;
+    right: 45px;
+
+}
+.three
+
+{
+    top: 235px ;
+    right: 10px;
+
+}
+.four
+{
+    top: 345px ;
+    right: 45px;
+
+}
+.five
+{
+
+    top: 430px;
+    right: 130px;
+}
+.six
+{
+
+    bottom:10px ;
+    left :240px ;
+}
+
+.seven
+{
+
+    top:430px ;
+    left:130px ;
+}
+
+
+.eight
+{
+
+    top:345px ;
+    left:45px ;
+}
+.nine
+{
+
+    top:235px ;
+left:10px ;
+}
+
+.ten
+{
+
+    top:125px ;
+    left:45px ;
+}
+
+.eleven
+{
+
+    top:40px ;
+    left:130px ;
+}
+.twelve
+{
+
+    top:10px ;
+    right:240px ;
+}
+
+.brand
+{
+    font-size: 52ppx;
+    font-weight: bold;
+    color: black;
+    position: absolute;
+    left: 42.5%;
+    top: 90px;
+}
+.minutehandwraper
+{
+    width: 400px;
+    height: 400px;
+    /* background-color: blue; */
+    border-radius: 50%;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+
+.minutehand{
+position: relative;
+
+
+}
+.minutehand .hand
+{
+    width: 6px;
+    height: 110px;
+    position: absolute;
+    background-color: powderblue;
+    left: 198px;
+    margin-top: 82px;
+
+}
+
+.minutehand .arrow
+{
+    font-size: 50px;
+    font-weight: bold;
+    color: blue;
+    transform: rotate(180deg);
+    position: absolute;
+    left: 188px;
+    top: 52px;
+
+}
+
+
+.hourhandwraper
+{
+    width: 300px;
+    height: 300px;
+    /* background-color: blue; */
+    border-radius: 50%;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+
+.hourhand{
+position: relative;
+
+
+}
+
+.hourhand .hand
+{
+
+    width: 4px ;
+    height: 150px;
+    background-color: aqua;
+    position: absolute;
+    left: 148px;
+
+}
+
+.hourhand .arrow
+{
+    font-size: 30px;
+    font-weight: bold;
+    color: blue;
+    transform: rotate(180deg);
+    position: absolute;
+    left: 140px;
+    top: -9px;
+
+}
+
+.secondhandwraper
+{
+    width: 350px;
+    height: 350px;
+    /* background-color: blue; */
+    border-radius: 50%;
+    position: absolute;
+    left: 75px;
+    top: 75px;
+}
+
+.secondhand{
+position: relative;
+
+
+}
+.secondhand .hand
+{
+
+    width: 2px ;
+    height: 175px;
+    background-color: red;
+    position: absolute;
+    left: 174px;
+
+}
